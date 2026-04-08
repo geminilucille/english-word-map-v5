@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>点点英语 - 终极兼容版</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="menu-btn" onclick="toggleMenu(true)">☰</button>
+
+<div class="overlay" id="overlay" onclick="toggleMenu(false)"></div>
+
+<div class="menu" id="menu">
+  <h3>目录</h3>
+  <button onclick="goTo(0, event)">封面</button>
+  <h3>L1级｜美食篇</h3>
+  <button onclick="goTo(1, event)">Breakfast</button>
+  <button onclick="goTo(2, event)">Breakfast Actions</button>
+  <button onclick="goTo(3, event)">Fruits</button>
+  <button onclick="goTo(4, event)">Eat Fruits</button>
+  <button onclick="goTo(5, event)">Snacks</button>
+  <button onclick="goTo(6, event)">Eat Snacks</button>
+</div>
+
+<div class="book" id="book">
+  <div class="page"><img src="images/封面.png"></div>
+  <div class="page">
+    <img src="images/page1.png">
+    <button class="word" style="top:28.5%; left:13.4%;" onclick="play('bread')">bread</button>
+    <button class="word" style="top:31.0%; left:78.0%;" onclick="play('milk')">milk</button>
+    <button class="word" style="top:89.5%; left:11.6%;" onclick="play('egg')">egg</button>
+    <button class="word" style="top:86.8%; left:43.2%;" onclick="play('cereal')">cereal</button>
+    <button class="word" style="top:86.8%; left:76.6%;" onclick="play('juice')">juice</button>
+  </div>
+  <div class="page">
+    <img src="images/2.png">
+    <button class="word" style="top:27.1%; left:29.8%;" onclick="play('eat bread')">eat bread</button>
+    <button class="word" style="top:21.7%; left:76.6%;" onclick="play('drink milk')">drink milk</button>
+    <button class="word" style="top:49.7%; left:43.4%;" onclick="play('eat an egg')">eat an egg</button>
+    <button class="word" style="top:83.5%; left:20.0%;" onclick="play('eat cereal')">eat cereal</button>
+    <button class="word" style="top:73.2%; left:73.0%;" onclick="play('drink juice')">drink juice</button>
+  </div>
+  <div class="page">
+    <img src="images/3.png">
+    <button class="word" style="top:17.1%; left:42.4%;" onclick="play('fruit')">fruit</button>
+    <button class="word" style="top:21.6%; left:14.6%;" onclick="play('apple')">apple</button>
+    <button class="word" style="top:20.4%; left:74.8%;" onclick="play('grape')">grape</button>
+    <button class="word" style="top:86.8%; left:11.8%;" onclick="play('banana')">banana</button>
+    <button class="word" style="top:64.2%; left:75.0%;" onclick="play('orange')">orange</button>
+    <button class="word" style="top:90.7%; left:66.2%;" onclick="play('watermelon')">watermelon</button>
+  </div>
+  <div class="page">
+    <img src="images/4.png">
+    <button class="word" style="top:13.4%; left:40.2%;" onclick="play('eat fruit')">eat fruit</button>
+    <button class="word" style="top:22.1%; left:11.0%;" onclick="play('eat an apple')">eat an apple</button>
+    <button class="word" style="top:20.6%; left:73.8%;" onclick="play('eat grapes')">eat grapes</button>
+    <button class="word" style="top:55.1%; left:17.2%;" onclick="play('eat a banana')">eat a banana</button>
+    <button class="word" style="top:54.2%; left:63.2%;" onclick="play('eat an orange')">eat an orange</button>
+    <button class="word" style="top:83.1%; left:39.8%;" onclick="play('eat watermelon')">eat watermelon</button>
+  </div>
+  <div class="page">
+    <img src="images/5.png">
+    <button class="word" style="top:11.7%; left:41.8%;" onclick="play('snacks')">snacks</button>
+    <button class="word" style="top:26.3%; left:15.4%;" onclick="play('cake')">cake</button>
+    <button class="word" style="top:27.9%; left:75.6%;" onclick="play('candy')">candy</button>
+    <button class="word" style="top:85.3%; left:13.2%;" onclick="play('chocolate')">chocolate</button>
+    <button class="word" style="top:83.0%; left:46.8%;" onclick="play('ice cream')">ice cream</button>
+    <button class="word" style="top:84.5%; left:74.8%;" onclick="play('hamburger')">hamburger</button>
+  </div>
+  <div class="page">
+    <img src="images/6.png">
+    <button class="word" style="top:30.5%; left:15.6%;" onclick="play('eat cake')">eat cake</button>
+    <button class="word" style="top:32.8%; left:73.2%;" onclick="play('eat candy')">eat candy</button>
+    <button class="word" style="top:85.5%; left:11.6%;" onclick="play('eat chocolate')">eat chocolate</button>
+    <button class="word" style="top:84.5%; left:41.2%;" onclick="play('eat ice cream')">eat ice cream</button>
+    <button class="word" style="top:89.1%; left:73.4%;" onclick="play('eat a hamburger')">eat a hamburger</button>
+  </div>
+</div>
+
+<button class="arrow-btn prev" onclick="prevPage()">‹</button>
+<button class="arrow-btn next" onclick="nextPage()">›</button>
+
+<script src="app.js"></script>
+</body>
+</html>
